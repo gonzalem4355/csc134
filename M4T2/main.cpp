@@ -5,9 +5,15 @@
 
 
 #include <iostream>
+#include <cstdlib> // Enables rand(), srand()
+#include <ctime>   // Enables use of time() function
 using namespace std;
-
-
+// CSC 134
+// M4T2 - Menus
+// Michael Gonzalez
+// 3/1/23
+// version 2 -- started our character creator
+// for thudd
 // menu functions
 void option_one(){
     //count from 0 to 9
@@ -27,13 +33,19 @@ void option_one(){
 }
 
 void option_two(){
-    // sum up five numbers
+    // dice roller
+    int d6_1, d6_2, d6_3; // 3 dice (6 sided)
+    int total; // 3d6
+    int seed;
+
 }
 
 void option_three() {
-    // TODO: what does this even do
+    // sum and average of dice
 }
-// main menu
+    // There is no option 4 function, it's just quit.
+
+    // main menu
 int main()
 {
     // display a menu
@@ -42,15 +54,15 @@ int main()
 
     cout << "Welcome to the menu" << endl;
     cout << "Press 1 to count" << endl;
-    cout << "Press 2 to sum up numbers" << endl;
-    cout << "Press 3 to TODO" << endl; // not implemented yet
+    cout << "Press 2 to roll dice" << endl;
+    cout << "Press 3 to roll a character" << endl; // not implemented yet
     cout << "Choice: ";
     // input validation
     int choice;
     cin >> choice;
-    // user must pick 1, 2, or 3
+    // user must pick 1, 2, 3, or 4
     while (choice < 1 || choice > 3) {
-        cout << "Please choose 1,2, or 3: ";
+        cout << "Please choose 1,2,3, or 4: ";
         cin >> choice;
     }
     // if we get here, we know choice is valid
