@@ -51,7 +51,7 @@ void option_two(){
 
 void option_three() {
     // sum and average of dice
-   // roll 3d6, six times
+    // roll 3d6, six times
     // find the sum and average
     // TODO: reroll if it's not high enough (average <9)
     int total = 0;             // the total of all stats
